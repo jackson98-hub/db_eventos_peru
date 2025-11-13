@@ -31,7 +31,8 @@ CREATE TABLE categorias (
   nombre VARCHAR(100) NOT NULL,
   descripcion TEXT,
   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-  status TINYINT(1) DEFAULT 1
+  status TINYINT(1) DEFAULT 1,
+  user_id varchar(20)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 -- Estados de evento
 CREATE TABLE estados_evento (
